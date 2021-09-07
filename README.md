@@ -16,3 +16,7 @@ Deployed at ...
 * If there are ten or fewer countries, but more than one, then all countries matching the query are shown
 
 * When there is only one country matching the query, then the basic data of the country, its flag and the languages spoken there, are shown.
+
+* The application works for most of the countries. Some countries are not supported, e.g. when there are name clashes and it can't reduced to a single country like with Sudan and South Sudan.
+
+
