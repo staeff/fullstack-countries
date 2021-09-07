@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import Country from './components/Country'
 import axios from 'axios'
 
 function App() {
@@ -16,6 +17,12 @@ function App() {
   return (
     <div>
       <h1>Countries</h1>
+
+      <ul>
+        {countries.map(country =>
+          <Country key={country.name} country={country} />
+        )}
+      </ul>
     </div>
   );
 }
