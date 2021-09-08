@@ -4,6 +4,7 @@ import axios from 'axios'
 
 function App() {
   const [ countries, setCountries ] = useState([])
+  const [ newFilter, setNewFilter ] = useState('')
 
   useEffect(() => {
     axios
@@ -14,12 +15,23 @@ function App() {
   }, [])
   console.log('render', countries.length, 'countries')
 
+  const countriesToShow = newFilter ?
+  countries.filter(country => country.name.toLowerCase().includes(newFilter.toLowerCase())) :
+  countries
+
+  const handleFilterChange = (event) => {
+    setNewFilter(event.target.value)
+    console.log(countries)
+  }
+
+
+
   return (
     <div>
       <h1>Countries</h1>
-
+      find countries <input type="text" value={newFilter} onChange={handleFilterChange} />
       <ul>
-        {countries.map(country =>
+        {countriesToShow.map(country =>
           <Country key={country.name} country={country} />
         )}
       </ul>
