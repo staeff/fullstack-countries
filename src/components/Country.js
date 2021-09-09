@@ -1,9 +1,9 @@
 import React from 'react'
 
 const Country = ({ country }) => {
-  return (
-    <li>{country.name}</li>
-  )
-}
+    return (
+      <p>{country.name}</p>
+    )
+  }
 
 export default Country

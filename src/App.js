@@ -24,14 +24,14 @@ function App() {
     console.log(countries)
   }
 
-
+  let length = countriesToShow.length
 
   return (
     <div>
       <h1>Countries</h1>
       find countries <input type="text" value={newFilter} onChange={handleFilterChange} />
-      <ul>
-        {countriesToShow.map(country =>
+      <div>
+        {length > 1 && length < 11 && countriesToShow.map(country =>
           <Country key={country.name} country={country} />
         )}
       </ul>
