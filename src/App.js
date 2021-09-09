@@ -39,6 +39,9 @@ function App() {
         {length > 10 &&
           <p>Too many matches, specify another filter</p>
         }
+        {length === 0 &&
+          <p>No matching countries</p>
+        }
       </div>
     </div>
   );
