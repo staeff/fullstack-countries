@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import Country from './components/Country'
+import Fullcountry from './components/Fullcountry'
 import axios from 'axios'
 
 function App() {
@@ -34,7 +35,13 @@ function App() {
         {length > 1 && length < 11 && countriesToShow.map(country =>
           <Country key={country.name} country={country} />
         )}
-      </ul>
+        {length === 1 && countriesToShow.map(country =>
+          <Fullcountry key={country.name} country={country} />
+        )}
+        {length > 10 &&
+          <p>Too many matches, specify another filter</p>
+        }
+      </div>
     </div>
   );
 }
