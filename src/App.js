@@ -14,7 +14,6 @@ function App() {
         setCountries(response.data)
       })
   }, [])
-  console.log('render', countries.length, 'countries')
 
   const countriesToShow = newFilter ?
   countries.filter(country => country.name.toLowerCase().includes(newFilter.toLowerCase())) :
@@ -22,7 +21,6 @@ function App() {
 
   const handleFilterChange = (event) => {
     setNewFilter(event.target.value)
-    console.log(countries)
   }
 
   let length = countriesToShow.length
