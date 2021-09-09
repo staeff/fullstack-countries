@@ -19,4 +19,33 @@ Deployed at ...
 
 * The application works for most of the countries. Some countries are not supported, e.g. when there are name clashes and it can't reduced to a single country like with Sudan and South Sudan.
 
+* No country found - option
 
+## Data
+
+Attributes:
+
+"name",
+"topLevelDomain",
+"alpha2Code",
+"alpha3Code",
+"callingCodes",
+"capital",
+"altSpellings",
+"region",
+"subregion",
+"population",
+"latlng",
+"demonym",
+"area",
+"gini",
+"timezones",
+"borders",
+"nativeName",
+"numericCode",
+"currencies",
+"languages",
+"translations",
+"flag",
+"regionalBlocs",
+"cioc"
