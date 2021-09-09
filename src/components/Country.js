@@ -2,7 +2,7 @@ import React from 'react'
 
 const Country = ({ country }) => {
     return (
-      <p>{country.name}</p>
+      <p>{country.name} <button type="submit">show</button></p>
     )
   }
 
