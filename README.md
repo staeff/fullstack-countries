@@ -2,8 +2,7 @@
 
 `restcountries` project from `https://fullstackopen.com/`
 
-Deployed at ...
-
+Deployed at https://fullstackopen-coutries.surge.sh
 
 ## Requirements
 
@@ -23,7 +22,9 @@ Deployed at ...
 
 ## Data
 
-Attributes:
+This is the record for Swiss: https://restcountries.eu/rest/v2/alpha/ch
+
+It has the following Attributes/Entries:
 
 "name",
 "topLevelDomain",
