@@ -20,6 +20,15 @@ Deployed at https://fullstackopen-coutries.surge.sh
 
 * No country found - option
 
+* Add button next to several country listing, that links to the country in question
+
+* Add weather of the countries capital, retrieved from weather api. The tutorial uses
+https://weatherstack.com/. Inspiration for other weather apis with a free tier:
+
+* https://rapidapi.com/blog/access-global-weather-data-with-these-weather-apis/
+
+* https://rapidapi.com/collection/yahoo-weather
+
 ## Data
 
 This is the record for Swiss: https://restcountries.eu/rest/v2/alpha/ch
