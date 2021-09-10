@@ -29,6 +29,14 @@ https://weatherstack.com/. Inspiration for other weather apis with a free tier:
 
 * https://rapidapi.com/collection/yahoo-weather
 
+## Loose Ends
+
+* How to deploy a React App that needs a secret API key?
+
+* How to cache API Queries? (weatherstack limits queries to 500 a month)
+
+* Solution to the Button Homework
+
 ## Data
 
 This is the record for Swiss: https://restcountries.eu/rest/v2/alpha/ch
