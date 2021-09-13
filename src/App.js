@@ -19,6 +19,10 @@ function App() {
   countries.filter(country => country.name.toLowerCase().includes(newFilter.toLowerCase())) :
   countries
 
+  const selectSingleCountry = (name) => {
+    setNewFilter(name)
+  }
+
   const handleFilterChange = (event) => {
     setNewFilter(event.target.value)
   }
@@ -31,7 +35,9 @@ function App() {
       find countries <input type="text" value={newFilter} onChange={handleFilterChange} />
       <div>
         {length > 1 && length < 11 && countriesToShow.map(country =>
-          <Country key={country.name} country={country} />
+          <Country key={country.name}
+                   country={country}
+                   selectCountry={() => selectSingleCountry(country.name)}/>
         )}
         {length === 1 && countriesToShow.map(country =>
           <Fullcountry key={country.name} country={country} />

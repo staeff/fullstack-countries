@@ -2,7 +2,7 @@
 
 `restcountries` project from `https://fullstackopen.com/`
 
-Deployed at https://fullstackopen-coutries.surge.sh
+Deployed at https://fullstackopen-countries.surge.sh
 
 ## Requirements
 
@@ -34,8 +34,6 @@ https://weatherstack.com/. Inspiration for other weather apis with a free tier:
 * How to deploy a React App that needs a secret API key?
 
 * How to cache API Queries? (weatherstack limits queries to 500 a month)
-
-* Solution to the Button Homework
 
 ## Data
 
